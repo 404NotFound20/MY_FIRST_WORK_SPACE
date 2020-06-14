@@ -1,0 +1,26 @@
+file：文件
+    pathSeparator：路径分割符   win； liunx：
+    separator：文件名分隔符    win\   liunx/
+
+    方法：
+        获取：
+            getAbsoulutePath:获取绝对路径
+            getPath：获取构造路径
+            getName：
+            length：文件大小，不存在返回0
+        判断：
+            exists：此file的文件目录是否存在
+            isDirectory：此file是否为目录，路径不存在为false
+            isFile：此file是否为文件，路径不存在为false
+        创建：
+            createNewFile：当前目录该名称文件不存在，创建成功：（只能创建文件，不能是文件夹，路径不存在会抛出异常）
+            mkdir：创建单级文件夹
+            mkdirs：创建多级文件夹
+            delete：从硬盘直接删除文件、文件夹
+        遍历：
+            list：返回（string）路径中的所有子文件与目录
+            listfiles：返回（file）路径中的所有子文件与目录
+
+directory：文件夹
+
+path：路径

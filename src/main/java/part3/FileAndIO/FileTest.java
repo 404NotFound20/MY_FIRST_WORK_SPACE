@@ -14,12 +14,14 @@ public class FileTest {
     public static void main(String[] args) throws IOException {
         //创建file对象：当前路径
         File file = new File(".");
-
+        System.out.println(file);
         //相关函数操作
         System.out.println("文件名" + file.getName());
         System.out.println("绝对路径file：" + file.getAbsoluteFile());
         System.out.println("绝对路径名string：" + file.getAbsolutePath());
         System.out.println("上一级string：" + file.getParent());//把.删除了就是null。。。。
+        System.out.println("路径分割符：" + File.pathSeparator);
+        System.out.println("文件名分隔符：" + File.separator);//把.删除了就是null。。。。
 
         //创建临时文件
         File tmpFile = File.createTempFile("name", ".text", file);
